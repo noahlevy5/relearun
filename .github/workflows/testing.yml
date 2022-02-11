@@ -45,5 +45,9 @@ jobs:
       - name: creation de la base de donnée
         run: php bin/console doctrine:database:create
 
+      - name: Creation du fichier migration SQL
+        run: php bin/console make:migration
+        
+
           #echo Add other actions to build,
           #echo test, and deploy your project.
