@@ -37,8 +37,8 @@ jobs:
         run: composer -v
 
       - name: renommer le fichier d'environnement
-        run: mv _.rnv.exempl .env
-        
+        run: mv _.env.exempl .env
+
       - name: installer vendor
         run: composer install
           #echo Add other actions to build,
