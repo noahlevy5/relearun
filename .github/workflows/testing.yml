@@ -35,5 +35,11 @@ jobs:
 
       - name: test de composer
         run: composer -v
+
+      - name: renommer le fichier d'environnement
+        run: mv _.rnv.exempl .env
+        
+      - name: installer vendor
+        run: composer install
           #echo Add other actions to build,
           #echo test, and deploy your project.
