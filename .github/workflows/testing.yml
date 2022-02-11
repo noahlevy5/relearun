@@ -41,5 +41,9 @@ jobs:
 
       - name: installer vendor
         run: composer install
+
+      - name: creation de la base de donnée
+        run: php bin/console doctrine:database:create
+
           #echo Add other actions to build,
           #echo test, and deploy your project.
