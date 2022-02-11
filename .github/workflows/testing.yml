@@ -47,7 +47,8 @@ jobs:
 
       - name: Creation du fichier migration SQL
         run: php bin/console make:migration
-        
 
+      - name: execution du script SQL
+        run: php bin/console -n doctrine:migrations:migrate
           #echo Add other actions to build,
           #echo test, and deploy your project.
